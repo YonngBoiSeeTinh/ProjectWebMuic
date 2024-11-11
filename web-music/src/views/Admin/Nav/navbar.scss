@@ -1,0 +1,91 @@
+.navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    background-color: whitesmoke;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    width: 83vw;
+    margin-left: 52px;
+    padding-right: 10px;
+    padding-top: 8px;
+    position: fixed;
+    z-index: 999;
+    .navbarContainer{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        .search{
+            display: flex;
+            width: 40%;
+            align-items: center;
+            padding: 3px;
+            border: 0.5px solid lightgray;
+            height: 40px;
+            border-radius: 5px;
+            padding-top:5px;
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent ;
+
+                &::placeholder{
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .items{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+
+            .item{
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+
+                .icon{
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+                // span{
+                //     padding-left: 5px;
+                // }
+
+                .counter{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    background-color: red;
+                    border-radius: 50%;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    top: -5px;
+                    right: -5px;
+                }
+
+                .profileImg{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 1px solid red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

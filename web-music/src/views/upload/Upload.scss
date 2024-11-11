@@ -1,0 +1,143 @@
+.upload-container{
+    width:  60%;
+    margin: 0 auto;
+   color: #929292;
+}
+.upload-form{
+    width: 100%;
+    height: 450px;
+    border: 1px #dfd5d5 solid;
+    border-radius: 10px;
+   
+}
+.border-top{
+    width: 100%;
+    height: 50px;
+    background-color: #e6e6e6;
+    border-bottom: 1px #dfd5d5 solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.upload-box{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-self: center;
+}
+.upload-info{
+   width: 65%;
+   margin-left: 30px;
+}
+
+.upload-info input{
+    width: 70%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px #dfd5d5 solid;
+    padding: 5px;
+    background-color: white;
+ }
+ .btn-up_file{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(75, 99, 177);
+    border-radius: 5px;
+    color: white;
+ }
+ .btn-up_file:hover{
+   cursor: pointer;
+    background-color: rgb(88, 105, 161);
+    border-radius: 5px;
+    
+ }
+.selectType{
+    width: 70%;
+    height: 30px;
+    margin-top: 5px;
+}
+.upload-image{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: px;
+}
+.upload-image:hover{
+   cursor: pointer;    
+}
+.upload-action{
+    display: flex;
+    width: 80%;
+    justify-content: right;
+    float: right;
+    margin-right: 30px;
+}
+.upload-action button{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+}
+.upload-normal{
+    background-color: rgb(46, 118, 212);
+}
+.upload-normal:hover{
+    cursor: pointer;
+    background-color: rgb(106, 146, 199);
+    opacity: 0.8;
+}
+.delete_playlist{
+    background-color: red;
+    color: #e6e6e6;
+}
+.delete_playlist:hover{
+    background-color: rgb(240, 105, 105);
+   cursor: pointer;
+}
+.upload-fast{background-color: rgb(236, 166, 37);}
+.upload-fast:hover{
+    cursor: pointer;
+    background-color:  rgb(213, 194, 142);
+}
+
+.upload_tit{
+    color: rgb(106, 146, 199);
+}
+.song_in-playlist{
+    width: 75%;
+    margin: 40px auto;
+    height: 400px;
+    h2{
+       
+    }
+    .upload_song-tit{
+        display: flex;
+       
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        .add_song{
+            width: 220px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(46, 118, 212);
+            font-size: 20px;
+        }
+        .add_song:hover{
+            cursor: pointer;
+            background-color: rgb(106, 146, 199);
+            opacity: 0.8;
+        }
+    }
+   
+}
+

@@ -1,0 +1,120 @@
+.alter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    min-width: 400px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;         // Cho phép cố định vị trí trên màn hình
+    top: 20px;               // Khoảng cách từ trên xuống
+    right: 20px;             // Khoảng cách từ bên phải vào
+    z-index: 9999;           // Đảm bảo nó nằm trên các thành phần khác
+    transition: all 0.3s ease-in-out; // Hiệu ứng mượt khi hiện/ẩn alert
+    animation: slideInRight 0.5s ease forwards; // Thêm animation khi hiển thị
+    transition: opacity 0.3s ease-in-out;
+    .alter__message {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .alter__button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: #ffffff;
+        border-radius: 10px;
+    }
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); // Bắt đầu ngoài màn hình bên phải
+        opacity: 0;                  // Ban đầu ẩn
+    }
+    100% {
+        transform: translateX(0);    // Kết thúc tại vị trí gốc
+        opacity: 1;                  // Hiển thị hoàn toàn
+    }
+}
+// Alert types
+.infor {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-left: 15px solid #17a2b8;
+    .alter__message:before {
+        content: '\2139';  // Info icon (ℹ️)
+        color: #17a2b8;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    .alter__button {
+        background:   #17a2b8;
+        color: #0c5460;
+    }
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 15px solid #28a745;
+    .alter__message:before {
+        content: '\2713';  // Success checkmark (✔️)
+        color: #28a745;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    .alter__button {
+        background:   #28a745;
+        color: #155724;
+    }
+}
+
+.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 15px solid #dc3545;
+    .alter__message:before {
+        content: '\2716';  // Danger cross (✖️)
+        color: #dc3545;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    .alter__button {
+        background:   #dc3545;
+        color: #721c24;
+    }
+    
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 15px solid #ffc107;
+   .alter__message:before {
+        content: '\26a0';  // Warning icon (⚠️)
+        color: #ffc107;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    .alter__button {
+        background:   #ffc107;
+        color: #856404;
+    }
+}
+
+
+

@@ -1,0 +1,126 @@
+.dashboard{   
+    
+    margin: 0 auto ;
+    margin-top: 60px;
+    margin-left: 30px ;
+}
+.card-top{
+    display: flex;
+    width: 95%;
+    margin:  10px auto;
+   
+}
+.card-top_item{
+    width: 23%;
+    height: 150px;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 5px 10px;
+    margin-top: 20px;
+    padding: 10px;
+    color: #aaa8a8;
+
+    .title{
+        font-weight: 600;
+        
+    }
+    .increase{
+        float: right;
+        color: rgb(43, 235, 39);
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: -20px;
+    }
+    .decrease{
+        float: right;
+        color: rgb(235, 39, 42);
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: -20px;
+    }
+    .neutral{
+        float: right;
+        color: rgb(196, 228, 49);
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: -20px;
+    }
+    .amount{
+        font-size: 60px;
+        font-weight: 300;
+        margin: 10px 0;
+    }
+    .revenue{
+        font-size: 30px;
+        font-weight: 300;
+        margin: 30px 0;
+        margin-bottom: 25px;
+       
+    }
+    .link{
+        margin-top: 10px;
+        font-size: 15px;
+        text-decoration: underline;
+        color: #888;
+    }
+    .icon{
+        float: right;
+    }
+
+}
+.card-top_item:hover{
+    cursor: pointer;
+}
+.total_by_month{
+    display: flex;
+  
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    .compareMonth{
+        width: 30%;
+        height: 440px;
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .total_month-chart{
+        width: 68%;
+        height: 440px;
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+        margin-left: 20px;
+        h3{
+            color: #888;
+            margin: 10px;
+            margin-left:80px ;
+        }
+        .vunue_chart{
+            margin: 40px;
+            margin-left: 90px;
+        }
+     
+    }
+}
+.order_by_month{
+    h3{
+        margin: 40px;
+        margin-top: 60px;
+        margin-left: 60px;
+        color: #222222;
+    }
+    border-radius: 10px;
+    width: 95%;
+    height: 400px;
+    margin: 30px auto;
+    margin-top: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    .chart_order{
+        margin: auto auto;
+    }
+}
